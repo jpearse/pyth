@@ -669,6 +669,9 @@ class Group(object):
 
     def handle_trowd(self):
         self.content.append(u'\n')
+
+    def handle_cell(self):
+        self.content.append(u'\t')
         
     #Handle the image tag
     def handle_pict(self):
